@@ -52,8 +52,8 @@ project/
 ##  Installation
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/THANUJ-IMAYAVARAMBAN31/house_price_prediction
+cd house_price_prediction
 pip install -r requirements.txt
 python app.py
 
