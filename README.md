@@ -2,6 +2,11 @@
 
 A machine learning web application built using Flask that predicts house prices based on user input features.
 
+#  House Price Prediction App
+
+-> Live Demo: https://house-price-prediction-0txy.onrender.com
+-> Note: App may take ~30 seconds to load on first visit (free hosting).
+
 ##  Features
 - Predict house prices using a trained ML model
 - Simple and interactive web interface
