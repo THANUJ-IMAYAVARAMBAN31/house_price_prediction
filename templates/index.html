@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Predictor</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            width: 400px;
+            border-radius: 10px;
+        }
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏠 House Price Prediction</h1>
+
+    <form action="/predict" method="post">
+        <input type="number" name="OverallQual" placeholder="Overall Quality" required><br>
+        <input type="number" name="GrLivArea" placeholder="Living Area" required><br>
+        <input type="number" name="GarageCars" placeholder="Garage Cars" required><br>
+        <input type="number" name="TotalBsmtSF" placeholder="Basement Area" required><br>
+        <input type="number" name="1stFlrSF" placeholder="1st Floor Area" required><br>
+        <input type="number" name="YearBuilt" placeholder="Year Built" required><br>
+        <input type="number" name="FullBath" placeholder="Full Bathrooms" required><br>
+        <input type="number" name="TotRmsAbvGrd" placeholder="Total Rooms" required><br>
+        <input type="number" name="GarageArea" placeholder="Garage Area" required><br>
+        <input type="number" name="LotArea" placeholder="Lot Area" required><br>
+        <input type="number" name="YearRemodAdd" placeholder="Year Remodeled" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
